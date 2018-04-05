@@ -37,7 +37,7 @@ public class MixpanelIntegration extends Integration<MixpanelAPI> {
           boolean trackNamedPages = settings.getBoolean("trackNamedPages", false);
           boolean isPeopleEnabled = settings.getBoolean("people", false);
           String token = settings.getString("token");
-          Set<String> increments = getStringSet(settings, "increments");
+          Set<String> increments = getStringSet(settings, "eventIncrements");
           boolean setAllTraitsByDefault = settings.getBoolean("setAllTraitsByDefault", true);
           Set<String> peopleProperties = getStringSet(settings, "peopleProperties");
           Set<String> superProperties = getStringSet(settings, "superProperties");
